@@ -1,0 +1,375 @@
+.Homepage {
+    display: flex;
+    height: 100vh;
+    
+}
+.Homepage .user-info{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.Homepage .login-message .icon-con{
+   
+    
+
+}
+.Homepage .login-message .icon-con .icon{
+    font-size: 3rem;
+    color: green;
+   
+}
+.Homepage .login-message a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.Homepage .login-message {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    align-items: center;
+    height: 100vh;
+}
+.Homepage .Home-left{
+    width: 30vw;
+    margin-right: 2px;
+}
+.Homepage .Home-right{
+    width: 70vw;
+
+}
+.chat-nav{
+    background: lightgrey;
+    height: 120px;
+}
+.user-info{
+
+    height: 60px;
+    padding: 15px ;
+}
+.user-info a{
+    text-decoration: none;
+}
+.user-info span{
+    background-image: url('../User/image/profile.png');
+
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 150px;
+    text-transform: capitalize;
+    color: black;
+letter-spacing: 2px;
+
+}
+.user-info span .icon{
+    margin-right: 5px;
+}
+.search-bar{
+    margin-top: 10px;
+    display: flex;
+  
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    /* border-bottom: 0.03px solid grey; */
+}
+.search-bar .input-group{
+    width: 80%;
+    /* padding: 10px;
+    margin: 10px; */
+    border-radius: 40px;
+}
+.search-bar select{
+    margin: 0px 10px;
+    width: 80px;
+    outline: none !important;
+    box-shadow: none !important;
+   
+}
+
+.search-bar .input-group label{
+    width: 20%;
+    font-size: 1.2rem;
+    margin:0 0 0 20px ;
+}
+.search-bar .input-group input{
+    width: 70%;
+    border: none;
+    outline: none;
+}
+.search-bar .input-group input:focus{
+
+    box-shadow: none;
+    
+}
+.search-bar .input-group label:hover,.search-bar .input-group input:hover{
+    cursor: pointer;
+}
+.usermessages{
+    display: flex;
+    flex-direction: column;
+   max-height: 70vh;
+   overflow-y:scroll;
+   /* margin: 20px; */
+
+}
+.usermessages .user{
+ display: flex;
+padding: 0px 10px;
+color: black;
+
+}
+.usermessages .chat-user-detail{
+    padding-bottom: 10px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.new-msg {
+    color: white !important;
+ margin-left: 20px;
+}
+
+.usermessages .user .user-icon{
+     margin-top: 10px;
+   
+}
+.usermessages .user .user-icon img{
+   margin: 5px 0 0 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.usermessages .user .user-name{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.usermessages .user .user-detail{
+    padding:20px;
+   display: flex;
+   flex-direction: column;
+    width: 100%;
+   padding-bottom: 20px;
+    border-bottom: 0.1px solid grey;
+}
+.usermessages .user:hover{
+   background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.usermessages .activechatpanel:hover{
+    background: rgba(0,0,0,0.8);
+}
+
+.usermessages a{
+    text-decoration: none;
+}
+.chats-info .icon{
+    margin: 10px;
+}
+.chats-info{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: green;
+    height: 100vh;
+    align-items: center;
+    font-weight: 600;
+}
+.nousers{
+    margin-top: 50% ;
+    text-align: center;
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+.loader{
+    display: flex;
+ 
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    width: 100vw;
+    /* width: 300px; */
+    /* gap:20px; */
+
+}
+.loader-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 40px;
+    /* background: orange  ; */
+
+}
+.loader-con .icon{
+margin: 20px;
+    /* overflow: hidden; */
+     /* background: url("https://gifdb.com/images/high/walking-man-animated-lzilp2z8jdxc73r0.gif"); */
+     background: url("https://cdn.dribbble.com/users/1711831/screenshots/3666945/walking-animation.gif");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 400px;
+width: 400px;
+border-radius: 40px;
+
+}
+.load-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px !important;
+    /* height: 100%; */
+}
+
+
+@keyframes bike{
+    0%{transform: translateX(-1000px);opacity: 0;color: brown;}
+    50%{transform: translateX(0px);opacity: 1;color: black;}
+    100%{transform: translateX(1000px);opacity: 0;color: coral;}
+}
+.loader:first-child{
+    color: green;
+    font-size: 5rem;
+}
+.loader .load-con{
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+}
+.user{
+    position: relative;
+ 
+}
+
+.user-msg .last-msg{
+    left: 120px;
+    bottom: 10px;
+    position: absolute;
+
+
+}
+.last-msg-time{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    
+}
+::-webkit-scrollbar{
+   width: 5px;
+   height: 0px !important;
+ cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb{
+    background: lightgrey;
+    border-radius: 40px;
+    cursor:pointer;
+   
+}
+
+
+.sent{
+    color: brown;
+}
+.received{
+    color: green;
+}
+#tab{
+    display: flex;
+    justify-content: flex-end;
+    /* border: none; */
+    border-bottom: 0.3px solid grey;
+    height: 50px;
+
+}
+#tab button{
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 40px;
+}
+
+.nav  .active{
+   
+    border-bottom: 2px solid white !important;
+    color: darkblue !important;
+}
+
+.new-msg-count{
+margin-left:40px;
+    background: orange;
+    border-radius: 100%;
+    padding:1px 6px;
+    font-weight: bold;
+    color: white;
+}
+.user-info span .icon{
+    color: white;
+}
+.user-profession{
+    background: yellow;
+    border-radius: 20px;
+    padding: 2px;
+    text-transform: capitalize;
+    max-width: 300px;
+    word-wrap: wrap;
+}   
+.activechatpanel{
+    color: white !important;
+    background: rgba(0,0,0,0.8);
+}
+/*
+ .loader .spinner{
+    width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 100%;
+    transition: all ease;
+    box-shadow: 0px 0px 10px violet ;
+}*/
+/*
+.loader .spinner:first-child{
+    background: pink;
+
+    animation: jump 1s  infinite;
+}
+.loader .spinner:nth-child(2){
+    background: red;
+    animation: jump 1s 0.1s infinite;
+}
+.loader .spinner:nth-child(3){
+    background: yellow;
+    animation: jump 1s 0.2s infinite;
+}
+.loader .spinner:nth-child(4){
+    background: blue;
+    animation: jump 1s 0.3s infinite;
+}
+.loader .spinner:nth-child(5){
+    background: brown;
+    animation: jump 1s 0.4s infinite;
+} */
+@keyframes jump{
+    0%{transform: translateY(-30px);}
+    /* 50%{transform: translateY(0px);} */
+    /* 75%{transform: translateY(-50px);} */
+    100%{transform: translateY(0px);}
+}
+@media(max-width:600px){
+    .profile form .user-input{
+        grid-template-columns: 1fr;
+    }
+    .profile form{
+        flex-direction: column;
+    }
+}

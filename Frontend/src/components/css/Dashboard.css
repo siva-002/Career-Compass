@@ -1,0 +1,622 @@
+.dashboard-items{
+    display: flex;
+
+    gap: 10px;
+}
+.dashboard-navbar{
+    width: 20vw;
+}
+.dashboard-item{
+    /* margin: 20px; */
+    padding-top: 100px;
+    /* width: 70vw; */
+
+
+}
+ 
+.profile form {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px grey;
+    /* margin-top: 150px; */
+    border-radius: 40px;
+  
+}
+.profile .form-con form .user-input{
+    display: grid;
+gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+  .profile form .user-input  input,.profile form .user-input  select{
+      /* background: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid black; */
+      /* color: white; */
+      border-radius: none;
+  }
+  .profile form .user-input  select option{
+      /* background: linear-gradient(132deg, rgb(59, 55, 106) 0.00%, rgb(0, 143, 186) 50.00%, rgb(255, 149, 213) 100.00%); */
+  background: white;
+  }
+  .profile form .user-input label{
+      display: block;
+      /* color: white; */
+      letter-spacing: 2px;
+      font-weight: 600;
+  }
+  .profile form .user-input  select{
+      width: 100%;
+      height: 40px;
+      border-radius: 10px;
+  }
+ 
+  .profile form .user-input input::placeholder{
+      color: white;
+  }
+  .profile .form-con form .img-con {
+    position: relative;
+  }
+  .profile .form-con form .img-con label{
+      font-size: 20px;
+      left: 150px;
+      position: absolute;
+      cursor: pointer;
+      background: orange;
+      padding:5px 10px;
+      border-radius: 100%;
+  }
+
+  .profile .form-con form img{
+     filter: drop-shadow(0px 0px 5px white);
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+  }
+ 
+  .form-con .toast-con{
+      max-width: 200px;
+      right: 0;
+      position: absolute;
+      font-size: 12px;
+   
+     
+  }
+  .profile .form-con form .file-upload{
+     display: none;
+      
+  }
+  .error{
+      color: red;
+      font-weight: bold;
+  }
+  .submit{
+ 
+      width: 40px;
+      height: 30px;
+  }
+.userhome{
+    margin: 20px;
+    /* width: 100%; */
+}
+.userhome .title,.manageevents .title span{
+
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-family:sans-serif;
+
+}
+.userhome .edit-profile{
+    color: purple;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.userhome  .user-detail-home .profile-container,.viewusermodal .profile-container{
+    display: flex;
+ padding: 20px;
+    box-shadow: 0px 0px  5px grey;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+ /* flex-wrap: wrap;
+    width: 100%;  */
+    min-width:500px;
+    min-height:200px;
+    /* word-wrap: break-word; */
+    max-width: 100%;
+    position: relative;
+}
+.userhome .user-detail-home,.viewusermodal .user-detail-home{
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+margin-top: 30px;
+ /* padding: 30px; */
+ 
+ /* border-radius: 10px; */
+
+}
+.userhome .user-info,.viewusermodal .user-info{
+    margin-top: -20px;
+    margin-left: 10px;
+    /* margin-right:20px ; */
+    height:180px;
+    width: 100%;
+}
+.userhome .user-info .username,.viewusermodal .user-info .username
+
+{
+    text-transform: capitalize;
+    font-size: 2rem;
+  
+}
+
+.userhome .user-info .userprofession span,.viewusermodal .user-info .userprofession span{
+    font-size: 12px;
+    margin-right:2px ;
+  
+}
+.viewusermodal .user-info .userinterest span{
+    font-size: 12px;
+    width: 200px;
+}
+.userhome .user-info .userprofession span:first-child,.viewusermodal .user-info .userprofession span:first-child{
+    color: green;
+}
+.userhome .user-info .usermobile, .viewusermodal .user-info .usermobile{
+    margin-top: 5px;
+}
+.userhome .user-info .usermobile span,.viewusermodal  .user-info .usermobile span{
+    font-size: 15px;
+    color: blue;
+
+}
+.userhome .user-info .useremail span,.viewusermodal  .user-info .useremail span{
+    margin-right: 2px;
+    color: brown;
+    font-size: 15px;
+}
+.userhome .user-info .useremail,.viewusermodal .user-info .useremail {
+    display: flex;
+    font-size: 15px;
+   
+}
+.userhome .user-detail .img{
+    width: 10%;
+}
+.userhome .user-detail-home .img img,.viewusermodal img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 5px gray);
+}
+.userhome .user-detail-home .user-info,
+.viewusermodal .user-info
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.events-container .events{
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 10px;
+   
+    overflow: hidden;
+   
+}
+.events-container{
+    position: relative;
+}
+.events-details-sub-panel{
+    padding: 20px;
+    width: 300px;
+    right:100%;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 0 0 5px grey;
+    border-radius: 10px;
+    background:#ffff;
+    margin: 10px;
+}
+.events-details-sub-panel .highlight-date{
+  
+}
+.events-details-sub-panel .highlight{
+    /* font-weight: 200; */
+    color: darkred;
+    font-weight: 500;
+    /* background: yellowgreen; */
+    /* padding: 5px; */
+}
+.events-details-sub-panel .close-btn{
+   cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.events-container .events ul {
+    list-style-type: none;
+    overflow: hidden;
+
+}
+.events-container .events ul li{
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.scroll-animation{
+    animation: marquee 8s linear infinite forwards;
+  
+}
+.pause-anim{
+    animation-play-state: paused;
+}
+.addevent-modal{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.nodata{
+    color: red !important;
+    padding: 20px;
+   
+}
+.addevent-modal tr td,.addevent-modal tr th{
+    padding: 10px;
+ border-bottom: 1px solid lightgrey;
+}
+ .nodatarow{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.addevent-modal .addevent-con{
+    padding: 20px;
+    width: 500px;
+    /* height: 70vh; */
+    overflow: auto;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+    border-radius: 10px;
+}
+.filter-status{
+    width: 200px;
+    box-shadow: none !important;
+    display: inline;
+    margin-left: 20px;
+    padding:5px;
+    outline: none !important;
+    border: 0.1px solid grey;
+    border-radius: 10px;
+}
+.addevent-modal .subevent-con{
+    width:70vw;
+    height: 70vh;
+    /* box-shadow:none; */
+    overflow: auto;
+}
+.subevent-con table{
+    margin-top: 20px !important;
+    padding: 20px;
+    text-align: center;
+}
+.subevent-con table tr td{
+    word-wrap: break-word;
+}
+.addevent-modal .close-btn{
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+.addevent-modal  .form-con{
+    margin-top: 20px;
+    /* display:flex;
+    justify-content: center; */
+}
+.addevent-modal .event-input{
+    /* width: 80%; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+.addevent-modal .event-input div label{
+    width: 200px;
+}
+.addevent-modal .event-input div{
+    display: flex;
+}
+.manageevents{
+    margin: 20px;
+}
+.manageevents .events-container{
+    margin: 20px;
+    padding: 10px;
+ width: 70vw;
+ height: 70vh;
+ overflow: auto;
+}
+.manageevents .events-container table tr th,
+.manageevents .events-container table tr td
+{
+    text-align: center;
+}
+.manageevents .events-container table tr .get-info{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.detail-panel-modal{
+    /* top:0px; */
+    position: absolute;
+    /* transform: translate(-35%,-60%);
+    padding: 20px;
+    top: 60%;
+    left: 35%; */
+    width: 500px;
+    min-height: 400px;
+    background-color: #ffff;
+    box-shadow: 0px 0px 5px grey;   
+z-index:999;
+}
+.detail-panel-modal .details div{
+    display: flex;
+    overflow-wrap: break-word;
+    margin: 10px;
+    /* justify-content: space-around; */
+}
+.detail-panel-modal .details div label{
+
+    width: 150px;
+    font-size: 1.3rem;
+}
+.detail-panel-modal .details div span{
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+.detail-panel-modal .details div .completed{
+    font-size: 1rem;
+}
+.detail-panel-modal .details div:nth-child(2) span{
+    font-size: 1rem;
+}
+.detail-panel-modal .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.event-load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.all-events{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.all-events .event{
+    padding: 10px;
+    width: 200px;
+    height: 120px;
+    box-shadow: 0px 0px 5px grey;
+    overflow-wrap: break-word;
+    position: relative;
+    border-radius: 10px;
+ cursor: pointer;
+}
+.all-events .event:hover{
+    border: 1px solid grey;
+}
+.all-events .event .title{
+    text-align: center;
+    background: lightgrey;
+    color: darkred;
+}
+.all-events .event .delete{
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    font-size: 15px;
+    
+}
+.all-events .event .status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 25px;
+}
+.all-events .event .evstatus{
+   position: absolute;
+   left: 10px;
+   bottom: 20px;
+   letter-spacing: 2px;
+}
+.all-events .event .Completed{
+    color: green;
+}
+.all-events .event .Today{
+    color: darkblue;
+}
+.all-events .event .Expired,.all-events .event .Rejected{
+    color: red;
+}
+.all-events .event .Upcoming{
+    color:orange;
+}
+.all-events .event .poster{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 10px;
+    /* width: 100%; */
+    overflow-wrap: break-word;
+}
+.updateloader{
+    height: 100%;
+    width: 100%;
+   
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.5);
+    z-index: 9999 !important;
+}
+.updateloader div{
+    color: #ffff;
+    z-index: 999 !important;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    
+   
+}
+
+.viewusermodal{
+    width: 500px;
+    height: 350px;
+    right: 10px;
+    position: absolute;
+    background: #ffff;
+    box-shadow: 0px 0px 5px lightgrey;
+    z-index: 9999;
+    padding: 10px;
+}
+.viewusermodal .close-btn{
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.viewusermodal .profile-container{
+    box-shadow: none;
+    overflow:visible;
+}
+.viewusermodal .profile-container .userinterest{
+    width: 300px !important;
+    
+}
+.viewusermodal .profile-container .userskills{
+    width: 300px !important;
+   
+}
+.viewusermodal .profile-container .userskills span,.viewusermodal .profile-container .usercompany span{
+    font-size: 12px !important;    
+}
+.viewusermodal .profile-container .userinterest span:first-child{
+    color: red;
+}
+.viewusermodal .profile-container .usercompany span:first-child{
+    color:darkblue;
+}
+.viewusermodal .profile-container span:nth-child(2){
+    margin-left: 2px !important;
+}
+.event-status-home{
+    color: #ffff !important;
+}
+
+@keyframes marquee{
+    0%{transform: translateY(200%);}
+    100%{transform: translateY(-100%);}
+}
+@media(max-width:1200px){
+    .events-details-sub-panel{
+        margin: 10px;
+        width: 300px;
+        position: absolute;
+        left:100%;
+        z-index: 999;
+        box-shadow: 0 0 5px grey;
+        background:#ffff;
+    }
+}
+  @media(max-width:800px){
+    .dashboard-items{
+        display: block  ;
+    }
+    .dashboard-item{
+        padding-top: 0px;
+    }
+    .userhome .user-detail{
+        display: none;
+    }
+
+    .userhome .profile{
+        /* padding-top: 200px; */
+    }
+    .userhome .profile .form-con form .user-input{
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        }
+  }
+
+
+
+
+  @media(max-width:600px){
+    .userhome  .user-info{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .userhome  .user-info .username{
+        font-size: 1rem;
+    }
+    .userhome  .user-detail-home .profile-container{
+        min-width: 100%;
+    }
+    .userhome  .user-info .useremail span:first-child{
+        font-size: 10px !important;
+    }
+    .userhome .user-info .useremail span{
+        /* display: flex; */
+
+        font-size: 12px;
+       
+    }
+    .userhome .user-detail-home{
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .userhome  .userhome{
+        /* padding-top: 100px; */
+    }
+    .userhome  .profile .form-con form .user-input{
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        }
+        .userhome .user-detail-home .profile-container{
+            flex-wrap: wrap;
+        }
+  }
+  @media(max-width:400px){
+    .userhome  .profile .form-con form .user-input{
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        }
+   
+  }

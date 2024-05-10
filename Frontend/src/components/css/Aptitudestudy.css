@@ -1,0 +1,113 @@
+.study{
+    margin: 20px;
+
+    height: 80vh;
+    width: 98%;
+    overflow: auto;
+}
+.study .icon{
+    font-size: 20px;
+}
+.study h3{
+    text-align: center;
+  letter-spacing: 3px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    color:darkseagreen;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+.study h3:before{
+   
+    /* content: "🟊"; */
+    color: goldenrod;
+}
+.study li ul li:before{
+    margin: 5px;
+   content: "✓";
+}
+.study .important::before{
+    margin: 5px;
+    content:"✔";
+    color: green;
+}
+.study .liicon{
+    font-size: 10px;
+    color:goldenrod;
+}
+.study .topics .topics-con .study-topics-container li{
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: all 0.1s linear;
+}
+.study .topics .topics-con .study-topics-container li:hover{
+    transform: scale(1.1);
+}
+.study .topics .topics-con .study-topics-container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ 
+    height: max-content;
+}
+.study .title{
+    font-size: 1.3rem;
+}
+.study ul{
+    list-style-type: none;
+}
+.important:after{
+    margin: 3px;
+    content: "*";
+    color: red;
+}
+.topics-con{
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap: 20px;
+}
+.video-panel{
+    margin: 30px;
+   min-width: 300px;
+   max-width: max-content;
+    height:60vh;
+    box-shadow: 0px 0px 5px  grey;
+    position: relative;
+    padding:20px;
+}
+.video-available{
+    cursor: pointer;
+}
+.video-available{
+   height: 30px;
+   /* margin: 20px; */
+    color: blue;
+    /* box-shadow: 0px 0px 5px grey; */
+    /* text-decoration: underline; */
+}
+.close-video{
+    right:10px;
+    top: 10px;
+    position: absolute;
+    color: white !important;
+    cursor: pointer;
+}
+.video-title{
+    left: 10px;
+    top:10px;
+    position: absolute;
+}
+iframe{
+    margin: 30px 50px;
+}
+@media(max-width:400px){
+    .topics-con{      
+        grid-template-columns: repeat(1,1fr);
+   
+    }
+}

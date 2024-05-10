@@ -1,0 +1,298 @@
+.signinpage ,.signuppage{
+   height: 100vh;
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 100px;
+   
+    
+}
+.signinpage,.signuppage ,.aboutpage ,.Home,.profile{
+    /* background: linear-gradient(132deg, rgb(9, 55, 6) 0.00%, rgb(100, 143, 8) 50.00%, rgb(255, 149, 213) 100.00%); */
+   /* background:rgba(0,0,0,0.7) ; */
+   /* color: white; */
+   /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+
+    
+}
+.Home,.aboutpage {
+    color: black;
+}
+div h4 span{
+    letter-spacing: 3px;
+    filter: drop-shadow(0px 0px 21px white);
+}
+.signinpage .signinform-container,.signuppage .signupform-container{
+    margin: 0 20px;
+    /* background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3) ); */
+    /* background: rgba(0,0,0,0.7); */
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+    color:black;
+  
+}
+.signinpage .signinform div,.signuppage .signupform div{
+    padding: 10px;
+}
+.signinpage .signinform div .form-control,.signuppage .signupform div .form-control{
+   border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+   color:black;
+   
+}
+.signinpage .signinform div .form-control:focus,.signuppage .signupform div .form-control:focus{
+    box-shadow: none;
+}
+.signinpage .signinform .inp label,.signuppage .signupform .inp label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transform: scale(0.9);
+    
+}
+.signinpage .signinform .inp  button,.signuppage .signupform .inp button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   height: 40px;
+}
+.signinpage .signinform div:nth-child(4)>button,.signuppage .signupform div:nth-child(4)>button{
+    margin: 0 10px 0 0;
+}
+.signinpage .signinform div:nth-child(3)>span {
+   display: block;
+    text-align: right;
+}
+.signinpage .signinform div a,.signuppage .signupform div a{
+    color:orange;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.toast-notification{
+width: 300px;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    
+}
+.forgot-password form{
+ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+.forgot-password .con{
+    /* background: grey; */
+    box-shadow: 0px 0px 5px grey;
+}
+.forgot-password{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+ 
+ 
+}
+.forgot-password .stepper{
+    width: 300px;
+}
+.pass-input{
+   position: relative;
+}
+.pass-input .info .error{
+
+    font-size: 13px;
+}
+ .info a{
+    text-decoration: none;
+}
+.info a,.info span{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+body{
+   
+    
+}
+
+.Home-con{
+    box-shadow: 0px 0px 5px grey;
+    display: flex;
+
+    gap: 20px;
+    width: 90vw;
+    justify-content: space-between;
+    animation: slide-in 2s forwards;
+    /* box-shadow: 0px 0px 5px grey; */
+    border-radius: 20px;
+    padding: 20px;
+
+    margin: 20px;
+    /* background-image: url("../images/career-bg-1.png"); */
+
+
+    /* background-position:right;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.Home-con .img-container img{
+
+border-radius: 20px;
+    height: 300px;
+    width: 500px;
+}
+.Home-con .img-container{
+    /* width: 80vw;
+    width: max-content;
+    height: 500px;
+    background-image: url("../images/career-bg-1.png");
+
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+}
+
+.aboutpage,.Home{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+   }
+.Home .info{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width:600px ;
+  /* min-height: 500px; */
+  /* margin: 20px; */
+/* color: white; */
+/* background: green; */
+/* padding: 20px; */
+/* background:rgba(0,0,0,0.7); */
+/* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+
+
+
+
+
+}
+.Home .info div:first-letter{
+    font-size: 3.2rem;
+    font-family:cursive;
+}
+.Home .info .title{
+    font-size: 3rem;
+
+    display: block;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-align: center;
+    /* color: purple; */
+    color:rgba(84, 52, 146, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:cursive,Geneva, Tahoma, sans-serif;
+    /* color: linear-gradient(to right,rgb(255,255,100),rgb(100,50,20)); */
+}
+.Home .info .sub{
+    font-size: 2rem;
+    font-weight: 300;
+   font-family: cursive,Geneva, Tahoma, sans-serif;
+   color: yellowgreen;
+}   
+
+@keyframes slide-in{
+   /* 0%{
+    transform: translateX(-1000px);
+    opacity:0;
+   }100%{
+    transform: translateX(0);
+    opacity: 1;
+   } */
+}
+.Home .info .sub .icon{
+   color: yellow;
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 10px yellow);
+   
+}
+.Home .info .description{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+dl{
+    width: 600px;
+    /* color: white; */
+    margin: 10px;
+    padding: 20px;
+    /* background:rgba(0,0,0,0.7); */
+box-shadow: 0px 0px 5px grey;
+border-radius: 20px;
+}
+.not-found{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.session-info{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: red;
+}
+@media(max-width:850px){
+    .Home-con{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:1100px){
+    
+    .Home{
+        padding-top: 100px !important;
+    }
+    .Home-con .img-container img{
+        width :100% !important;
+    
+    }
+}
+@media(max-width:600px){
+   
+
+
+    .Home .info .title{
+        /* margin-top: 20%; */
+        font-size: 2rem;
+    }
+    .Home .info .sub{
+        font-size: 1.4rem;
+       
+    } 
+    .Home .info .sub .icon{
+        font-size: 20px;
+        filter:none;
+    }
+    dl{
+        margin-top: 100px;
+    }
+}

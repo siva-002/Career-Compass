@@ -1,0 +1,515 @@
+.forum{
+    /* padding-top: 100px; */
+    display: flex;
+
+}
+.forum .main-content{
+    padding-top: 100px;
+
+}
+.forum-home {
+    margin: 20px;
+}
+.forum-home .headtitle,.forumquestions .headtitle{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+display: flex;
+justify-content: space-between;
+ width: 75vw;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+.forum-home .title{
+    font-size: 1.5rem;
+letter-spacing: 1px;
+}
+.forum-home .headtitle .searchbtn{
+   box-shadow: none;
+   outline: none;
+}
+.forum-home-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70vw;
+  
+}
+.forum-home-content .rightpanel{
+    padding: 10px;
+
+    height: max-content;
+}
+.forum-home-content .post-details .total-posts{
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid lightblue;
+    padding-left: 10px;
+    font-size: 1.5rem;
+
+
+}
+.forum-home-content .post-details .total-posts span:nth-child(2){
+    color: green;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+}
+.forum-home-content .post-details .total-users span:nth-child(2){
+    color:brown;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+
+}
+
+.forum-home-content .post-details .total-users{
+    
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid lightsalmon;
+    padding-left: 10px;
+}
+.forum-home-content .posts-container{
+    width: 90%;
+    height: 70vh;
+ overflow: auto;
+    overflow-x: hidden;
+}
+.forum-home-content .posts-container .post{
+    transition: all 0.3s linear;
+    margin: 20px;
+    box-shadow: 0px 0px 5px lightgrey;
+    min-height: 100px;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.forum-home-content .posts-container .post{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    /* flex-direction: column; */
+}
+.forum-home-content .posts-container .post .post-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.forum-home-content .posts-container .post .post-details .comment-btn{
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  color: brown;
+    position: absolute;
+}
+.forum-home-content .posts-container .post .post-details .commentpost-btn{
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+    color: green;
+    position: absolute  ;
+}
+.forum-home-content .posts-container .post .post-details .post-head .date{
+    font-size: 12px;
+}
+.forum-home-content .posts-container .post .post-details .post-head{
+    display: flex;
+    justify-content: space-between;
+}
+.forum-home-content .posts-container .post .post-details .post-head .title{
+    max-width:70%;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+.forum-home-content .posts-container .post .post-details .post-description{
+     max-width:70%;
+    word-wrap: break-word;
+}
+.forum-home-content .posts-container .post div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.forum-home-content .posts-container .post .comments-panel{
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.forum-home-content .posts-container .post .reply-group{
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.forum-home-content .posts-container .post .comments-panel .comments-con{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+.forum-home-content .posts-container .post .comments-panel .comments-con img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.forum-home-content .posts-container .post .comments-panel .comments-con .comments-details .name{
+    text-transform: uppercase;
+}
+.forum-home-content .posts-container .post .comments-panel .comments-con .comments-details{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.forum-home-content .posts-container .post .comments-panel .comments-con .comments-details .date{
+    right: 10px;
+    position: absolute;
+    font-size: 12px;
+}
+.forum-home-content .posts-container .comment_show{
+max-height:400px;
+
+}
+.forum-home-content .posts-container .post .activecommentpanel{
+    overflow: auto;
+}
+.addquestion{
+ 
+   left: 0;
+   top: 0;
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   background: rgba(0,0,0,0.5);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 999;
+}
+.addquestion form{
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 5px lightgrey;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+}
+.addquestion form .closebtn{
+    cursor: pointer;
+    right: 10px;
+    position: absolute;
+}
+.addquestion form div{
+    display: flex;
+    flex-direction: column;
+
+}
+.forumquestions{
+    margin: 20px;
+    height: 70vh;
+    overflow: auto;
+}
+.forumquestions .forum-questions-con{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.forumquestions .forum-questions-con .question-item{
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px lightgray;
+    border-radius: 10px;
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.forumquestions .forum-questions-con .question-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px lightgray;
+}
+.forumquestions .forum-questions-con .question-item .title{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.forumquestions .forum-questions-con .question-item  .date{
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    font-size: 10px;
+}
+.forumquestions .forum-questions-con .question-item .getcomments{
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    color: brown;
+}
+.forumquestions .forum-questions-con .question-item .actions{
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    right: 3px;
+    font-size: 10px;
+    position: absolute;
+}
+.forumquestions .forum-questions-con .question-item .actions span:first-child{
+    color: orange;
+}
+.forumquestions .forum-questions-con .question-item .actions span:nth-child(2){
+    color: red;
+}
+.forumquestions .reloadbtn,.forum-home .reloadbtn{
+    cursor: pointer;
+}
+.editpost{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.editpost .edit-con{
+    z-index: 999;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+}
+.editpost .edit-con .badge{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.editpost .edit-con form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.getreplies{
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.getreplies .replies-con{
+    width: 400px;
+    height:400px;
+    background:#fff;
+    z-index:999;
+    box-shadow: 0px 0px 5px lightgrey;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+
+
+
+}
+.getreplies .replies-con .close-btn{
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.getreplies .replies-con .allcomments  .allcomments-con{
+    margin: 10px 0;
+    overflow: auto;
+    height: 300px;
+}
+.getreplies .replies-con .allcomments .head{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid green;
+    font-size: 20px;
+}
+.getreplies .replies-con .allcomments .comments-item{
+    font-size: 10px;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    /* border-bottom: 2px solid lightgrey; */
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+
+}
+.getreplies .replies-con .allcomments .comments-item:hover{
+    box-shadow: 0px 0px 5px lightgrey;
+}
+.getreplies .replies-con .allcomments .comments-item span:first-child{
+    font-size: 16px;
+}
+.getreplies .replies-con .allcomments .comments-item .comment-details{
+   
+    display: flex;
+    flex-direction: column;
+}
+.getreplies .replies-con .allcomments{
+    width: 100%;
+    height: 100%;
+}
+.getreplies .replies-con .info{
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.myreplies{
+    margin: 20px;
+}
+.myreplies .title{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+display: flex;
+justify-content: space-between;
+ width: 75vw;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+.myreplies .repliescontainer{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+    padding: 5px;
+}
+.myreplies .repliescontainer .comment-item{
+
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 0px 5px lightgrey;
+    background-color:#fff;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.myreplies .repliescontainer .comment-item span{
+    max-width: 100%;
+    overflow: hidden;
+}
+.myreplies .repliescontainer .comment-item span:nth-child(2){
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+}
+.myreplies .repliescontainer .comment-item span:nth-child(3){
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   overflow: hidden;
+   transform: translate(-50%,-50%);
+}
+.myreplies .showcomment {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.myreplies .showcomment .showcommentcon{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 999;
+    border-radius: 20px;
+    padding: 10px;
+   
+}
+.myreplies .showcomment .close-btn{
+    right: 10px;
+    top: 10px;
+    position: absolute;
+cursor: pointer;
+}
+.myreplies .showcomment .showcommentcon .title-comment{
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid green;
+}
+.myreplies .showcomment .showcommentcon .mycomment-con{
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+    margin-top: 10px;
+}
+.myreplies .showcomment .showcommentcon .mycomment-con .mycomment{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    border-radius:20px;
+}
+.myreplies .showcomment .showcommentcon .mycomment-con .mycomment .date{
+    font-size: 10px;
+}
+.myreplies .showcomment .showcommentcon .mycomment-con .mycomment  .actions{
+    display: flex;
+}
+.myreplies .showcomment .showcommentcon .mycomment-con .mycomment span:first-child{
+    width: 70%;
+    overflow-wrap: break-word;
+}
+.myreplies .updatemodal{
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 9999;
+    overflow: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+.myreplies .updatemodal .close-btn{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
