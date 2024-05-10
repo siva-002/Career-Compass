@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 const connect=()=>{
-    const uri = "mongodb+srv://ADMIN:fFXIqNKv1eVjnWKk@cluster0.vspjqox.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const uri = "db link"; 
 
     try{
         mongoose.connect(uri).then(()=>{
