@@ -1,0 +1,11 @@
+<h1>MERN STACK PROJECT</h1>
+
+<h2>ACADEMIC MAIN PROJECT</h2>
+
+<h3>MODULES</h3>
+<ul>
+  <li>DASHBOARD </li>
+  <li>REAL TIME CHAT MODULE</li>
+  <li>APTITUDE MODULE  (QUIZ)</li>
+  <li>FORUM MODULE</li>
+</ul>
